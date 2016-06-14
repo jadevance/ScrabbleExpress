@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+    <body>
+      <form action="" method="post">
+      Score a word: <input type="text" name="word" ><br>
+      <input type="submit" value="Submit">
+      </form> </br>
+      <a href="/">Home</a> 
+      <a href="/scrabble/chart">Score Chart</a> 
+      <a href="/scrabble/score">Score Word</a> </br></br>
+      <% if (locals.score) { %>
+        <h3>WORD</h3></section>
+        <p><%= locals.word %></p>
+        <h3>SCORE</h3></section>
+        <p><%= locals.score %></p>
+      <% } %>
+    </body>
+  </html>
